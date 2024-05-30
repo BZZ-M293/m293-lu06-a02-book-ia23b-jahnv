@@ -5,6 +5,24 @@
     <title>LU06.A02 - Buch</title>
   </head>
   <body>
+  <form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
+    <label for='title'>Buchtitel</label>
+    <input id='title' name='Buchtitel' type='text' minlength='2' maxlength='30' required />
 
+    <label for='author'>Autoren</label>
+    <input id='author' name='Autoren' type='text' minlength='5' maxlength='40' required />
+
+    <label for='price'>Preis</label>
+    <input id='price' name='Preis' type='decimal' minlength='0.05' maxlength='99.95' required />
+
+    <label for='date'>Erscheinungsdatum</label>
+    <input id='date' name='Erscheinungsdatum' type='datetime-local' required />
+
+    <label for='edition'>Auflage</label>
+    <input id='edition' name='Auflage' type='text' size='9' required />
+
+    <button type='submit'>Absenden</button>
+    <button type='reset'>Zurücksetzten</button>
+  </form>
   </body>
 </html>
